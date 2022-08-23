@@ -7,7 +7,7 @@
 
 body {
     height: 90vh;
-    display: flex;
+    display: grid;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -16,11 +16,16 @@ body {
     background: linear-gradient(to right, #f1d8e5, #82b9e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.title{
+    color: white;
+    text-align: center;
+}
 #contenedor {
+    width:50%;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 #caja1, #caja2, #caja3 {
@@ -28,8 +33,8 @@ body {
     text-align: center;
     vertical-align: middle;
     padding-top: 20%;
-    width: 200px;
-    height: 200px;
+    width: 15rem;
+    height: 16rem;
 }
 
 #caja1 {
@@ -43,4 +48,13 @@ body {
 #caja3 {
     background-color: #2ab2ea;
     color:azure;    
+}
+
+@media (max-width: 768px){
+     #contenedor{
+         display: flex;
+         flex-direction: column;
+         
+     }
+    
 }
