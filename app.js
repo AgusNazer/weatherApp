@@ -34,7 +34,7 @@ window.addEventListener('load', ()=> {
         temperaturaDescripcion.textContent = desc.toUpperCase()
         ubicacion.textContent = data.name
         
-        vientoVelocidad.textContent = `${data.wind.speed} m/s`
+        vientoVelocidad.textContent = `${data.wind.speed * 3.7} k/h`
         
        
 
